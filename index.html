@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekstraktor GDrive SKP & Solusi Administrasi ASN / PPPK Kemensos</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            kemensos: {
+              50: '#f0f5fa',
+              100: '#e1ebf5',
+              200: '#c5d9eb',
+              700: '#1a4369',
+              800: '#143654',
+              900: '#0F2942', // Signature Kemensos Navy
+              950: '#091a2b',
+            },
+            gold: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            },
+            govgreen: {
+              500: '#10b981',
+              600: '#059669',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #091a2b;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1a4369;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f59e0b;
+    }
+    .gov-mesh {
+      background-color: #0F2942;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(245, 158, 11, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.12) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(26, 67, 105, 0.4) 0px, transparent 100%);
+    }
+    .scanner-line {
+      background: linear-gradient(180deg, transparent, rgba(245, 158, 11, 0.8), transparent);
+    }
+  </style>
+</head>
+<body class="bg-[#091a2b] text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-gold-500 selection:text-slate-950">
+
+  <div class="bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 text-slate-950 text-[11px] sm:text-xs font-bold py-1.5 px-4 text-center tracking-wide flex items-center justify-center gap-2 shadow-sm">
+    <span class="bg-slate-950 text-amber-300 text-[9px] uppercase px-2 py-0.5 rounded-full font-extrabold tracking-wider">PRODUK UNGGULAN TERVERIFIKASI</span>
+    <span>Ekstraktor GDrive SKP: 1-Klik Salin Puluhan Tautan Bukti Dukung ke Form e-Kinerja BKN!</span>
+  </div>
+
+  <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-kemensos-950/90 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-500 via-yellow-400 to-emerald-400 flex items-center justify-center text-slate-950 shadow-lg shadow-amber-500/20 font-black text-xl group-hover:scale-105 transition-transform">
+          <i class="fa-brands fa-google-drive"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-xl font-extrabold tracking-tight text-white">Ekstraktor<span class="text-amber-400">GDrive</span></span>
+            <span class="text-[10px] font-extrabold bg-kemensos-700/60 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded">KEMENSOS</span>
+          </div>
+          <p class="text-[11px] text-slate-400 font-medium flex items-center gap-1.5">
+            <span>Toolkit ASN & PPPK</span>
+            <span class="w-1 h-1 rounded-full bg-slate-600"></span>
+            <span class="text-emerald-400 font-semibold">e-Kinerja BKN</span>
+          </p>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-6 text-xs font-semibold text-slate-300">
+        <a href="#playground" class="hover:text-amber-400 transition-colors flex items-center gap-1.5 text-amber-400">
+          <i class="fa-solid fa-play text-[10px]"></i> Coba Ekstraktor Live
+        </a>
+        <a href="#fitur" class="hover:text-amber-400 transition-colors">Keunggulan</a>
+        <a href="#katalog" class="hover:text-amber-400 transition-colors">Katalog Toolkit SKP</a>
+        <a href="#testimoni" class="hover:text-amber-400 transition-colors">Testimoni Pendamping PKH</a>
+        <a href="#faq" class="hover:text-amber-400 transition-colors">Keamanan Data</a>
+      </nav>
+
+      <!-- Right Actions: WA Consultation & Cart -->
+      <div class="flex items-center gap-3">
+        <a 
+          href="https://wa.me/6281234567890?text=Halo%20Admin%2C%20saya%20ASN%2FPPPK%20Kemensos%20mau%20tanya%20tentang%20Ekstraktor%20GDrive%20SKP" 
+          target="_blank"
+          class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold bg-emerald-600/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-600/30 transition-all"
+        >
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>Bantuan Admin</span>
+        </a>
+
+        <!-- Cart Trigger -->
+        <button 
+          id="openCartBtn" 
+          class="relative p-2.5 sm:px-4 sm:py-2.5 rounded-xl bg-kemensos-900 border border-slate-700 hover:border-amber-500 text-slate-200 hover:text-white flex items-center gap-2.5 transition-all shadow-md group"
+          title="Buka Keranjang"
+        >
+          <i class="fa-solid fa-cart-shopping text-base text-amber-400 group-hover:scale-110 transition-transform"></i>
+          <span class="text-xs font-bold hidden sm:inline">Pilihan Produk</span>
+          <span id="cartBadgeCount" class="w-5 h-5 rounded-full bg-amber-500 text-[10px] font-black text-slate-950 flex items-center justify-center -ml-1">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative gov-mesh pt-12 pb-16 md:pt-20 md:pb-24 border-b border-slate-800 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          
+          <!-- Pill Tag -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-kemensos-950/80 border border-amber-500/30 text-amber-300 text-xs font-semibold mb-6 shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Aplikasi Resmi Siap Pakai untuk Pendamping PKH, Operator DTKS, & Penata Laksana
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+            Stop Buka Link GDrive Satu per Satu! <br />
+            <span class="bg-gradient-to-r from-amber-400 via-yellow-200 to-amber-500 bg-clip-text text-transparent">
+              Ekstraktor GDrive SKP Kemensos
+            </span>
+          </h1>
+
+          <p class="mt-5 text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
+            Solusi otomatis untuk mengubah ratusan file dokumentasi P2K2, berkas verivali SIKS-NG, dan surat tugas di Google Drive menjadi <strong>tautan terverifikasi publik</strong> dan <strong>rekap format tabel Excel</strong> yang siap disalin ke aplikasi <strong>e-Kinerja BKN</strong> dalam hitungan detik.
+          </p>
+
+          <!-- CTAs -->
+          <div class="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 justify-center lg:justify-start">
+            <a 
+              href="#playground" 
+              class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-slate-950 font-extrabold text-sm shadow-xl shadow-amber-500/20 flex items-center justify-center gap-2.5 transition-all transform active:scale-95"
+            >
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span>Coba Demo Ekstraktor Sekarang</span>
+            </a>
+            <button 
+              onclick="addHeroProductDirectly()" 
+              class="px-6 py-3.5 rounded-xl bg-kemensos-900 hover:bg-kemensos-800 text-slate-200 border border-slate-700 font-bold text-sm flex items-center justify-center gap-2 transition-all"
+            >
+              <i class="fa-solid fa-bolt text-amber-400"></i>
+              <span>Beli Lisensi Pro (Rp 129.000)</span>
+            </button>
+          </div>
+
+          <!-- Quick Proof Points -->
+          <div class="mt-10 pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-400">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-400"></i>
+              <span>100% Aman (Privasi Akun Terjaga)</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-400"></i>
+              <span>Tanpa Batas File & Folder</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-400"></i>
+              <span>Format e-Kinerja BKN PermenPANRB 6</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Interactive Graphic Card -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl bg-kemensos-950 border border-slate-700 p-5 shadow-2xl overflow-hidden group">
+            
+            <!-- Graphic Header -->
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+                <span class="font-bold text-slate-300 ml-2">Ekstraktor GDrive SKP v2.4</span>
+              </div>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">ONLINE</span>
+            </div>
+
+            <!-- Visual Flow Illustration -->
+            <div class="mt-4 space-y-3 text-xs">
+              <div class="p-3 rounded-xl bg-kemensos-900/90 border border-slate-700/80 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
+                    <i class="fa-brands fa-google-drive"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-white text-[11px]">Folder GDrive Berisi 150+ Foto & PDF</p>
+                    <p class="text-[10px] text-slate-400">Contoh: "Bukti P2K2 TW-II Dinsos Brebes"</p>
+                  </div>
+                </div>
+                <i class="fa-solid fa-arrow-down text-slate-500"></i>
+              </div>
+
+              <!-- Scanning Animation simulation card -->
+              <div class="p-3.5 rounded-xl bg-slate-900 border border-amber-500/40 relative overflow-hidden">
+                <div class="flex items-center justify-between text-[11px] mb-2 font-semibold">
+                  <span class="text-amber-400 flex items-center gap-1.5">
+                    <i class="fa-solid fa-arrows-rotate animate-spin text-xs"></i> Mesin Ekstraksi Tautan BKN
+                  </span>
+                  <span class="text-slate-300 font-mono">100% Siap Taut</span>
+                </div>
+                <!-- Progress bar -->
+                <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+                  <div class="bg-gradient-to-r from-amber-500 to-emerald-400 h-2 rounded-full w-full"></div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-2 italic">Menata nama berkas, hak akses Anyone with link, dan membuat direct download url.</p>
+              </div>
+
+              <!-- Result Preview -->
+              <div class="p-3 rounded-xl bg-kemensos-900/90 border border-emerald-500/40 text-[11px]">
+                <div class="flex items-center justify-between font-bold text-emerald-400 mb-1">
+                  <span>Hasil e-Kinerja Ready:</span>
+                  <span class="text-[10px] bg-emerald-500/20 px-2 py-0.5 rounded text-emerald-300">Siap Paste</span>
+                </div>
+                <p class="font-mono text-[10px] text-slate-300 bg-slate-950 p-2 rounded border border-slate-800 truncate">
+                  [1] Foto Pertemuan P2K2 Desa Margasari.jpg - https://drive.google.com/file/d/1X9.../view
+                </p>
+              </div>
+            </div>
+
+            <!-- Bottom Action Trigger -->
+            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between">
+              <span class="text-[10px] text-slate-400">Tersedia untuk Windows, Mac, & Web Script</span>
+              <a href="#playground" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                Jalankan Demo <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="playground" class="py-16 bg-[#0c2035] border-b border-slate-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-extrabold uppercase tracking-wider mb-2">
+          <i class="fa-solid fa-laptop-code"></i> Simulator Interaktif Langsung
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-black text-white">Uji Coba Ekstraktor GDrive SKP di Sini</h2>
+        <p class="text-xs sm:text-sm text-slate-300 mt-2">
+          Pilih salah satu folder sampel tugas Kemensos di bawah atau masukkan tautan folder Google Drive Anda sendiri untuk mensimulasikan ekstraksi link bukti dukung.
+        </p>
+      </div>
+
+      <!-- Simulator Interactive Workstation Box -->
+      <div class="rounded-2xl bg-kemensos-950 border border-slate-700 shadow-2xl overflow-hidden">
+        
+        <!-- Preset Folder Selector Bar -->
+        <div class="p-4 sm:p-5 bg-kemensos-900 border-b border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <label class="block text-[11px] font-extrabold uppercase tracking-wider text-amber-400 mb-1">
+              Pilih Preset Folder Bukti Dukung Kemensos:
+            </label>
+            <div class="flex flex-wrap gap-2" id="presetButtons">
+              <button 
+                onclick="loadPreset('pkh')" 
+                id="preset-pkh" 
+                class="preset-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500 text-slate-950 transition-all flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-users"></i> P2K2 PKH TW-II
+              </button>
+              <button 
+                onclick="loadPreset('dtks')" 
+                id="preset-dtks" 
+                class="preset-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 transition-all flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-database"></i> Verivali SIKS-NG DTKS
+              </button>
+              <button 
+                onclick="loadPreset('sppd')" 
+                id="preset-sppd" 
+                class="preset-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 transition-all flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-file-invoice"></i> SK & SPPD Penata Laksana
+              </button>
+            </div>
+          </div>
+
+          <!-- Format Mode Option -->
+          <div class="flex items-center gap-3">
+            <span class="text-xs font-semibold text-slate-300">Format Output:</span>
+            <select id="outputFormatSelect" onchange="applyOutputFormat()" class="px-3 py-1.5 rounded-lg bg-kemensos-950 border border-slate-700 text-xs text-amber-300 font-semibold focus:outline-none focus:border-amber-500">
+              <option value="table">Tabel Interaktif</option>
+              <option value="bullet">Daftar Link (BKN Siap Paste)</option>
+              <option value="csv">Format Kolom Excel (CSV)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Input Bar: URL + Action -->
+        <div class="p-4 sm:p-6 border-b border-slate-800/80 bg-kemensos-950">
+          <div class="flex flex-col sm:flex-row gap-3">
+            <div class="relative flex-1">
+              <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                <i class="fa-brands fa-google-drive text-amber-400"></i>
+              </div>
+              <input 
+                type="text" 
+                id="gdriveUrlInput" 
+                value="https://drive.google.com/drive/folders/1BxiMVs0XRA5nK_PKH_P2K2_Dinsos2026?usp=sharing" 
+                placeholder="Tempel tautan folder Google Drive Anda di sini..."
+                class="w-full pl-10 pr-4 py-3 rounded-xl bg-kemensos-900 border border-slate-700 text-xs sm:text-sm text-white font-mono placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500"
+              />
+            </div>
+            <button 
+              id="startScanBtn" 
+              onclick="simulateDriveExtraction()" 
+              class="px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20 whitespace-nowrap transition-all"
+            >
+              <i class="fa-solid fa-bolt"></i>
+              <span>Ekstrak Link Bukti Dukung</span>
+            </button>
+          </div>
+
+          <!-- Active scanning indicator (hidden by default) -->
+          <div id="scanningProgress" class="hidden mt-4 p-4 rounded-xl bg-kemensos-900 border border-amber-500/40">
+            <div class="flex items-center justify-between text-xs font-bold text-amber-300 mb-2">
+              <span id="scanStatusMsg" class="flex items-center gap-2">
+                <i class="fa-solid fa-spinner fa-spin"></i> Memindai folder GDrive...
+              </span>
+              <span id="scanPercent">0%</span>
+            </div>
+            <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+              <div id="scanProgressBar" class="bg-amber-500 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simulator Result Area -->
+        <div class="p-4 sm:p-6 bg-[#081726]">
+          
+          <!-- Result Statistics Header -->
+          <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-4 border-b border-slate-800 text-xs">
+            <div class="flex items-center gap-4">
+              <div>
+                <span class="text-slate-400 block text-[10px] uppercase font-bold">Total Berkas Ditemukan</span>
+                <span id="statTotalFiles" class="text-sm sm:text-base font-black text-amber-400">12 Berkas Bukti</span>
+              </div>
+              <div class="h-6 w-px bg-slate-800"></div>
+              <div>
+                <span class="text-slate-400 block text-[10px] uppercase font-bold">Status Hak Akses</span>
+                <span class="text-emerald-400 font-bold flex items-center gap-1">
+                  <i class="fa-solid fa-lock-open text-[10px]"></i> Siap Dinilai Tim Penilai BKN
+                </span>
+              </div>
+            </div>
+
+            <!-- Action Copy / Export Buttons -->
+            <div class="flex items-center gap-2">
+              <button 
+                onclick="copyExtractedLinks()" 
+                class="px-3.5 py-1.5 rounded-lg bg-kemensos-900 hover:bg-kemensos-800 border border-slate-700 text-slate-200 text-xs font-bold flex items-center gap-1.5 transition-colors"
+                title="Salin Seluruh Tautan Format Teks"
+              >
+                <i class="fa-regular fa-copy text-amber-400"></i>
+                <span id="copyBtnText">Salin Teks untuk e-Kinerja</span>
+              </button>
+              <button 
+                onclick="downloadExtractedCSV()" 
+                class="px-3.5 py-1.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/30 text-emerald-300 text-xs font-bold flex items-center gap-1.5 transition-colors"
+                title="Download file Excel CSV"
+              >
+                <i class="fa-solid fa-file-excel"></i>
+                <span>Download .CSV</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dynamic Output Container (Table, Bullet, or CSV View) -->
+          <div id="outputContentContainer">
+            <!-- Table View (Default) -->
+            <div class="overflow-x-auto rounded-xl border border-slate-800 bg-kemensos-950">
+              <table class="w-full text-left text-xs text-slate-300">
+                <thead class="bg-kemensos-900 text-slate-400 uppercase text-[10px] tracking-wider border-b border-slate-800">
+                  <tr>
+                    <th class="py-3 px-4 w-12 text-center">No</th>
+                    <th class="py-3 px-4">Nama Dokumen Bukti Dukung</th>
+                    <th class="py-3 px-4 w-24">Ukuran</th>
+                    <th class="py-3 px-4 w-32">Kategori RHK</th>
+                    <th class="py-3 px-4">Tautan Bersih e-Kinerja (View / Shareable)</th>
+                    <th class="py-3 px-4 text-center w-24">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody id="extractedTableBody" class="divide-y divide-slate-800/60 font-normal">
+                  <!-- Populated via JavaScript -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Help footer inside playground -->
+          <div class="mt-4 p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+            <p class="text-slate-300 text-[11px] leading-relaxed">
+              <i class="fa-solid fa-circle-check text-emerald-400 mr-1.5"></i>
+              <strong>Saran Praktis Kemensos:</strong> Salin teks hasil ekstraksi langsung ke kolom <em>"Bukti Dukung (G-Drive)"</em> pada penilaian triwulanan e-Kinerja BKN.
+            </p>
+            <button 
+              onclick="addHeroProductDirectly()" 
+              class="px-3.5 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs whitespace-nowrap transition-colors"
+            >
+              Miliki Aplikasi Ekstraktor Pro <i class="fa-solid fa-arrow-right ml-1"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fitur" class="py-16 bg-[#091a2b] border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-amber-400 text-xs font-extrabold uppercase tracking-widest block mb-1">
+          KENAPA EKSTRAKTOR INI WAJIB DIMILIKI?
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Dirancang Spesifik untuk Masalah Nyata di Kemensos</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-2">Bukan sekadar penyingkat link biasa. Disesuaikan dengan tata cara pengisian e-Kinerja BKN.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Feature 1 -->
+        <div class="p-6 rounded-2xl bg-kemensos-950 border border-slate-800 hover:border-amber-500/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4 font-bold">
+            <i class="fa-solid fa-bolt-lightning"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Hemat Waktu Hingga 90%</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Tidak perlu lagi mengklik kanan satu-satu pada puluhan foto dokumentasi P2K2 atau berkas bansos di Google Drive lalu memilih "Get Link". Cukup salin 1 link folder, semua link berkas keluar otomatis.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="p-6 rounded-2xl bg-kemensos-950 border border-slate-800 hover:border-emerald-500/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4 font-bold">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Cegah Error Tautan Terkunci (Permission Denied)</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Seringkali atasan penilai kinerja menolak SKP karena file Google Drive masih berstatus "Restricted". Aplikasi ini otomatis memverifikasi dan mengubah tautan menjadi "Anyone with the link can view".
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="p-6 rounded-2xl bg-kemensos-950 border border-slate-800 hover:border-blue-500/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4 font-bold">
+            <i class="fa-solid fa-file-csv"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Ekspor Langsung ke Excel / CSV</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Hasil ekstraksi dapat diunduh dalam bentuk berkas Excel (.csv) berformat tabel rapi, lengkap dengan nama dokumen, ukuran berkas, kategori triwulan, dan tautan langsung untuk arsip satuan kerja.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <main id="katalog" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-1 w-full">
+    
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
+      <div>
+        <span class="text-amber-400 text-xs font-bold uppercase tracking-widest block">KATALOG PRODUK & LISENSI</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-0.5">Solusi SKP & Administrasi ASN Kemensos</h2>
+        <p class="text-xs text-slate-400 mt-1">Dapatkan software ekstraktor maupun paket template matriks e-Kinerja BKN terlengkap.</p>
+      </div>
+
+      <!-- Search & Filter Controls -->
+      <div class="flex flex-col sm:flex-row items-center gap-3">
+        <div class="w-full sm:w-64 relative">
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+            <i class="fa-solid fa-magnifying-glass text-xs"></i>
+          </div>
+          <input 
+            type="text" 
+            id="catalogSearch" 
+            placeholder="Cari produk / jabatan..." 
+            class="w-full pl-8 pr-3 py-2 rounded-xl bg-kemensos-950 border border-slate-700 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-amber-500 transition-all"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="productGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
+      <!-- Injected via JavaScript -->
+    </div>
+  </main>
+
+  <section id="testimoni" class="py-16 bg-[#0a1c2e] border-y border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <span class="text-amber-400 text-xs font-bold uppercase tracking-widest">BUKTI KEPUASAN REKAN KEMENSOS</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Digunakan oleh Ratusan Pendamping & Operator</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-kemensos-950 border border-slate-800 flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-300 text-xs italic leading-relaxed">
+              "Tiap triwulan ada 50+ foto pertemuan P2K2 dan modul kesehatan. Dulu setengah harian cuma buat copy-paste link Google Drive satu per satu. Dengan <strong>Ekstraktor GDrive SKP</strong>, 3 menit langsung selesai semua link beres!"
+            </p>
+          </div>
+          <div class="mt-6 flex items-center gap-3 pt-4 border-t border-slate-800/80">
+            <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-extrabold text-xs flex items-center justify-center border border-amber-500/40">
+              YP
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-white">Yusuf Pratama, S.Tr.Sos</h4>
+              <p class="text-[11px] text-slate-400">PPPK Pendamping Sosial PKH - Jawa Tengah</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-kemensos-950 border border-slate-800 flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-300 text-xs italic leading-relaxed">
+              "Kami di operator DTKS SIKS-NG mengelola berita acara musdes dari puluhan desa. Ekstraktor ini sangat membantu membuat tautan logbook yang rapi ke e-Kinerja tanpa takut link-nya kekunci."
+            </p>
+          </div>
+          <div class="mt-6 flex items-center gap-3 pt-4 border-t border-slate-800/80">
+            <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 font-extrabold text-xs flex items-center justify-center border border-emerald-500/40">
+              SM
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-white">Siti Mardiyah, S.Kom</h4>
+              <p class="text-[11px] text-slate-400">Operator SIKS-NG / DTKS Dinsos Kabupaten</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-kemensos-950 border border-slate-800 flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-300 text-xs italic leading-relaxed">
+              "Saya beli paket Bundle (Ekstraktor GDrive + Template Penata Laksana). Penataan bukti surat tugas dan SPPD langsung sinkron dengan matriks RHK Pimpinan Sentra. Sangat direkomendasikan!"
+            </p>
+          </div>
+          <div class="mt-6 flex items-center gap-3 pt-4 border-t border-slate-800/80">
+            <div class="w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-extrabold text-xs flex items-center justify-center border border-blue-500/40">
+              FR
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-white">Fajar Ramadhan, S.AP</h4>
+              <p class="text-[11px] text-slate-400">Penata Laksana Operasional - Balai Kemensos</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-16 bg-[#091a2b]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10">
+        <span class="text-amber-400 text-xs font-bold uppercase tracking-widest">TANYA JAWAB TEKNIS</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Keamanan Data & Cara Penggunaan</h2>
+      </div>
+
+      <div class="space-y-3" id="faqAccordion">
+        
+        <div class="rounded-xl bg-kemensos-950 border border-slate-800 overflow-hidden">
+          <button class="faq-btn w-full p-4 text-left flex justify-between items-center text-xs sm:text-sm font-bold text-slate-200 hover:text-amber-400 transition-colors">
+            <span>Apakah Ekstraktor GDrive SKP aman dan tidak mengakses email pribadi saya?</span>
+            <i class="fa-solid fa-chevron-down transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-4 pb-4 text-xs text-slate-400 leading-relaxed border-t border-slate-800/60 pt-2">
+            100% Sangat Aman. Aplikasi ini tidak memerlukan kata sandi akun Google Anda. Ekstraktor bekerja murni berbasis URL publik / link berbagi folder yang Anda masukkan sendiri. Kami tidak menyimpan atau menyalin isi dokumen Anda ke server luar.
+          </div>
+        </div>
+
+        <div class="rounded-xl bg-kemensos-950 border border-slate-800 overflow-hidden">
+          <button class="faq-btn w-full p-4 text-left flex justify-between items-center text-xs sm:text-sm font-bold text-slate-200 hover:text-amber-400 transition-colors">
+            <span>Bagaimana cara menempelkan hasilnya ke aplikasi e-Kinerja BKN?</span>
+            <i class="fa-solid fa-chevron-down transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-4 pb-4 text-xs text-slate-400 leading-relaxed border-t border-slate-800/60 pt-2">
+            Cukup klik tombol <strong>"Salin Teks untuk e-Kinerja"</strong> pada aplikasi. Kemudian buka e-Kinerja BKN, masuk ke menu <em>Pelaksanaan Kinerja > Bukti Dukung</em>, lalu tempel (Paste) teks tersebut pada kolom nama dan URL bukti dukung Anda.
+          </div>
+        </div>
+
+        <div class="rounded-xl bg-kemensos-950 border border-slate-800 overflow-hidden">
+          <button class="faq-btn w-full p-4 text-left flex justify-between items-center text-xs sm:text-sm font-bold text-slate-200 hover:text-amber-400 transition-colors">
+            <span>Berapa batas jumlah file yang bisa diekstrak sekaligus?</span>
+            <i class="fa-solid fa-chevron-down transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-4 pb-4 text-xs text-slate-400 leading-relaxed border-t border-slate-800/60 pt-2">
+            Untuk versi Pro, <strong>tidak ada batasan jumlah file</strong> (Unlimited). Anda bisa mengekstrak ratusan foto P2K2, berkas pdf scan surat tugas, maupun folder bertingkat (sub-folder) dalam satu kali proses.
+          </div>
+        </div>
+
+        <div class="rounded-xl bg-kemensos-950 border border-slate-800 overflow-hidden">
+          <button class="faq-btn w-full p-4 text-left flex justify-between items-center text-xs sm:text-sm font-bold text-slate-200 hover:text-amber-400 transition-colors">
+            <span>Setelah membeli lisensi, apa yang saya terima?</span>
+            <i class="fa-solid fa-chevron-down transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-4 pb-4 text-xs text-slate-400 leading-relaxed border-t border-slate-800/60 pt-2">
+            Anda menerima file executable aplikasi siap pakai, skrip ekstensi web mandiri, video panduan cara pakai 3 menit, serta lisensi aktif selamanya (lifetime access) tanpa biaya bulanan.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="mt-auto bg-kemensos-950 border-t border-slate-800 pt-10 pb-8 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-slate-800">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-8 h-8 rounded-lg bg-amber-500 text-slate-950 font-black flex items-center justify-center text-sm">
+              <i class="fa-brands fa-google-drive"></i>
+            </div>
+            <span class="text-base font-bold text-white">Ekstraktor GDrive SKP</span>
+          </div>
+          <p class="text-[11px] leading-relaxed text-slate-400">
+            Platform asistensi digital independen untuk membantu efisiensi administrasi ASN & PPPK di lingkungan Kementerian Sosial RI, Dinas Sosial Provinsi/Kabupaten/Kota, dan Balai/Sentra.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white uppercase text-[11px] tracking-wider mb-3">Menu Cepat</h4>
+          <ul class="space-y-1.5 text-[11px]">
+            <li><a href="#playground" class="hover:text-amber-400">Simulator GDrive Ekstraktor</a></li>
+            <li><a href="#katalog" class="hover:text-amber-400">Katalog Lisensi & Template SKP</a></li>
+            <li><a href="#testimoni" class="hover:text-amber-400">Ulasan Pendamping Sosial</a></li>
+            <li><a href="#faq" class="hover:text-amber-400">Kebijakan Privasi & BKN</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white uppercase text-[11px] tracking-wider mb-3">Layanan Informasi</h4>
+          <p class="text-[11px]">Butuh bantuan aktivasi atau penyesuaian khusus instansi? Hubungi admin via WhatsApp:</p>
+          <a href="https://wa.me/6281234567890" target="_blank" class="mt-2 inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold">
+            <i class="fa-brands fa-whatsapp"></i> +62 812-3456-7890
+          </a>
+          <p class="text-[10px] text-slate-500 mt-2">Senin - Minggu: 07.30 - 21.00 WIB</p>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[10px] text-slate-500">
+        <p>&copy; 2026 Ekstraktor GDrive SKP. Dikembangkan untuk kemudahan ASN & PPPK Indonesia.</p>
+        <p>BerAKHLAK: Berorientasi Pelayanan, Akuntabel, Kompeten, Harmonis, Loyal, Adaptif, Kolaboratif.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cartDrawer" class="fixed inset-0 z-50 overflow-hidden hidden" aria-modal="true">
+    <div class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm" id="cartOverlay"></div>
+
+    <div class="fixed inset-y-0 right-0 max-w-full flex pl-8">
+      <div class="w-screen max-w-md bg-kemensos-950 border-l border-slate-800 shadow-2xl flex flex-col">
+        
+        <!-- Cart Drawer Header -->
+        <div class="p-5 border-b border-slate-800 flex items-center justify-between bg-kemensos-900">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-cart-arrow-down text-amber-400"></i>
+            <h3 class="text-sm font-extrabold text-white">Keranjang Produk ASN Kemensos</h3>
+            <span id="drawerCartBadge" class="text-[10px] bg-amber-500 text-slate-950 font-black px-2 py-0.5 rounded-full">0</span>
+          </div>
+          <button id="closeCartBtn" class="text-slate-400 hover:text-white p-1 rounded-lg">
+            <i class="fa-solid fa-xmark text-base"></i>
+          </button>
+        </div>
+
+        <!-- Selected Items Container -->
+        <div class="flex-1 overflow-y-auto p-5 space-y-3" id="cartItemsList">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Checkout Form & WhatsApp Generator -->
+        <div class="p-5 border-t border-slate-800 bg-kemensos-900 space-y-3">
+          
+          <!-- Discount Coupon -->
+          <div class="flex gap-2">
+            <input 
+              type="text" 
+              id="couponInput" 
+              placeholder="Kupon: ASN2026 (Diskon 15%)" 
+              class="uppercase flex-1 px-3 py-1.5 rounded-lg bg-kemensos-950 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-500"
+            />
+            <button onclick="applyDiscountCoupon()" class="px-3.5 py-1.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 text-xs font-bold rounded-lg transition-colors">
+              Gunakan
+            </button>
+          </div>
+          <div id="couponNotice" class="text-[10px] font-semibold text-emerald-400 hidden"></div>
+
+          <!-- Total Calculation -->
+          <div class="space-y-1 text-xs border-t border-slate-800/80 pt-2">
+            <div class="flex justify-between text-slate-400">
+              <span>Subtotal:</span>
+              <span id="subtotalDisplay">Rp 0</span>
+            </div>
+            <div id="discountContainer" class="flex justify-between text-emerald-400 hidden">
+              <span>Potongan Kupon ASN:</span>
+              <span id="discountDisplay">- Rp 0</span>
+            </div>
+            <div class="flex justify-between text-sm font-extrabold text-white pt-1 border-t border-slate-800">
+              <span>Total Pembayaran:</span>
+              <span id="totalDisplay" class="text-amber-400 text-base">Rp 0</span>
+            </div>
+          </div>
+
+          <!-- ASN/PPPK Buyer Identity Form -->
+          <div class="space-y-2 pt-2 border-t border-slate-800/80 text-left">
+            <label class="block text-[10px] font-bold uppercase tracking-wider text-amber-400">Identitas Pemesan (Untuk Registrasi Lisensi):</label>
+            <input 
+              type="text" 
+              id="orderBuyerName" 
+              placeholder="Nama Lengkap & Gelar (Contoh: Ahmad, S.Sos)" 
+              class="w-full px-3 py-2 rounded-lg bg-kemensos-950 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-500"
+            />
+            <div class="grid grid-cols-2 gap-2">
+              <input 
+                type="text" 
+                id="orderBuyerNIP" 
+                placeholder="NIP / NI PPPK" 
+                class="w-full px-3 py-2 rounded-lg bg-kemensos-950 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-500"
+              />
+              <input 
+                type="text" 
+                id="orderBuyerSatker" 
+                placeholder="Unit / Dinsos Kab/Kota" 
+                class="w-full px-3 py-2 rounded-lg bg-kemensos-950 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-500"
+              />
+            </div>
+            <input 
+              type="tel" 
+              id="orderBuyerPhone" 
+              placeholder="Nomor WhatsApp (Contoh: 08123456789)" 
+              class="w-full px-3 py-2 rounded-lg bg-kemensos-950 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-500"
+            />
+          </div>
+
+          <!-- Checkout WhatsApp CTA -->
+          <button 
+            id="btnSubmitWhatsApp" 
+            onclick="sendWhatsAppOrder()" 
+            class="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+          >
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            Kirim Pesanan & Dapatkan Link Aplikasi
+          </button>
+          <p class="text-[9px] text-center text-slate-500">
+            Akses download dan lisensi dikirim otomatis via WhatsApp setelah verifikasi.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="toastBox" class="fixed bottom-5 right-5 z-50 hidden transition-all duration-300">
+    <div class="px-4 py-3 rounded-xl bg-kemensos-900 border border-amber-500/40 text-white shadow-2xl flex items-center gap-3">
+      <div class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div>
+        <p id="toastHead" class="text-xs font-bold text-white">Sukses</p>
+        <p id="toastMessage" class="text-[11px] text-slate-400">Aksi berhasil dilakukan</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ==========================================================
+       DATA PRODUK & SIMULATOR PRESET
+       ========================================================== */
+    const PRODUCTS = [
+      {
+        id: "prod-ekstraktor-pro",
+        title: "Ekstraktor GDrive SKP Pro (Lisensi Permanen)",
+        role: "Hero Flagship Kemensos",
+        isHero: true,
+        price: 129000,
+        originalPrice: 249000,
+        badge: "PALING DICARI",
+        desc: "Aplikasi komputer & script otomatis untuk mengekstrak seluruh link file Google Drive bukti dukung SKP ke format e-Kinerja BKN dan Excel CSV tanpa batasan file.",
+        features: [
+          "Ekstraksi Folder & Subfolder Tak Terbatas",
+          "Otomatis generate Shareable Link (Anyone with Link)",
+          "Format ekspor khusus kompatibel e-Kinerja BKN",
+          "Fitur ekspor CSV / Excel sekali klik",
+          "Lisensi seumur hidup + free update"
+        ]
+      },
+      {
+        id: "prod-skp-pkh",
+        title: "Paket RHK & Template Bukti Dukung PKH Triwulan I - IV",
+        role: "Pendamping PKH",
+        isHero: false,
+        price: 99000,
+        originalPrice: 199000,
+        badge: "BEST SELLER",
+        desc: "Master template RHK Pimpinan & Anggota, laporan modul P2K2, rekap graduasi sejahtera, dan narasi BerAKHLAK siap disalin ke e-Kinerja.",
+        features: [
+          "File RHK Excel Triwulan 1 s/d 4 + Tahunan",
+          "Template Word Laporan P2K2 / Pertemuan Rutin",
+          "Berita Acara Graduasi Mandiri KPM",
+          "Folder Drive Contoh Penataan Bukti Dukung"
+        ]
+      },
+      {
+        id: "prod-skp-dtks",
+        title: "Toolkit SKP Operator DTKS / SIKS-NG Dinsos & Desa",
+        role: "Operator DTKS",
+        isHero: false,
+        price: 89000,
+        originalPrice: 179000,
+        badge: "REKOMENDASI",
+        desc: "Lengkap dengan logbook verivali lapangan, usulan sanggah bansos, berita acara musdes kelayakan penerima manfaat, dan indikator kuantitas waktu.",
+        features: [
+          "Matriks RHK Pengelolaan & Verivali SIKS-NG",
+          "Logbook Harian Rekap Data SIKS-NG Excel",
+          "Format Berita Acara Musdes / Muskel Bansos",
+          "Panduan Penulisan Ekspektasi Khusus Pimpinan"
+        ]
+      },
+      {
+        id: "prod-skp-penata",
+        title: "Template SKP Penata Laksana Operasional Kemensos",
+        role: "Penata Laksana",
+        isHero: false,
+        price: 89000,
+        originalPrice: 169000,
+        badge: "PPPK TEKNIS",
+        desc: "Dirancang untuk staf tata usaha, sekretariat, dan balai/sentra Kemensos RI sesuai standar PermenPANRB No. 6 Tahun 2022.",
+        features: [
+          "RHK Tata Kelola Kearsipan & Surat Kedinasan",
+          "Logbook Inventarisasi Sarana Operasional",
+          "Format Laporan SPPD & Perjalanan Dinas",
+          "Bank Kalimat Feedback Perilaku BerAKHLAK"
+        ]
+      }
+    ];
+
+    const SIMULATOR_PRESETS = {
+      pkh: {
+        folderUrl: "https://drive.google.com/drive/folders/1BxiMVs0XRA5nK_PKH_P2K2_Dinsos2026?usp=sharing",
+        files: [
+          {
+            name: "Laporan_P2K2_Modul_Pengasuhan_Margasari_TW2.pdf",
+            size: "2.4 MB",
+            category: "Laporan Utama (Kuantitas)",
+            link: "https://drive.google.com/file/d/1X9aK_P2K2_Modul1_Margasari/view?usp=sharing"
+          },
+          {
+            name: "Dokumentasi_Foto_FDS_Kelompok_Mawar_Mei.jpg",
+            size: "3.1 MB",
+            category: "Bukti Dukung Kegiatan",
+            link: "https://drive.google.com/file/d/1Y8bL_Foto_P2K2_KelompokMawar/view?usp=sharing"
+          },
+          {
+            name: "Daftar_Hadir_KPM_PKH_P2K2_Bulan_Juni.pdf",
+            size: "1.1 MB",
+            category: "Absensi & Verifikasi",
+            link: "https://drive.google.com/file/d/1Z7cM_DaftarHadir_TW2_Juni/view?usp=sharing"
+          },
+          {
+            name: "Berita_Acara_Graduasi_Mandiri_Ibu_Siti.pdf",
+            size: "850 KB",
+            category: "Graduasi KPM (Kualitas)",
+            link: "https://drive.google.com/file/d/1W6dN_BA_Graduasi_Mandiri/view?usp=sharing"
+          },
+          {
+            name: "Rekapitulasi_Pemutakhiran_Data_Kesehatan_TW2.xlsx",
+            size: "540 KB",
+            category: "Verval Komitmen (Waktu)",
+            link: "https://drive.google.com/file/d/1V5eO_RekapVerval_Kesehatan/view?usp=sharing"
+          }
+        ]
+      },
+      dtks: {
+        folderUrl: "https://drive.google.com/drive/folders/1DtkS_SIKS_NG_Verivali_Linjamsos_2026?usp=sharing",
+        files: [
+          {
+            name: "Berita_Acara_Musdes_Kelayakan_Bansos_Kecamatan.pdf",
+            size: "4.2 MB",
+            category: "Dokumen Pengesahan (Kuantitas)",
+            link: "https://drive.google.com/file/d/1A2bC_BA_Musdes_Kecamatan/view?usp=sharing"
+          },
+          {
+            name: "Rekap_Ekspor_Log_SIKS_NG_Periode_Mei.xlsx",
+            size: "1.8 MB",
+            category: "Logbook SIKS-NG (Waktu)",
+            link: "https://drive.google.com/file/d/1B3cD_Rekap_SIKSNG_Mei/view?usp=sharing"
+          },
+          {
+            name: "Foto_Geotagging_Rumah_Usulan_KPM_DesaA.zip",
+            size: "14.5 MB",
+            category: "Verifikasi Lapangan",
+            link: "https://drive.google.com/file/d/1C4dE_Geotagging_UsulanKPM/view?usp=sharing"
+          },
+          {
+            name: "Surat_Pertanggungjawaban_Mutlak_SPTJM_Kadis.pdf",
+            size: "620 KB",
+            category: "Legalitas & Akuntabilitas",
+            link: "https://drive.google.com/file/d/1D5eF_SPTJM_KadisDinsos/view?usp=sharing"
+          }
+        ]
+      },
+      sppd: {
+        folderUrl: "https://drive.google.com/drive/folders/1PntL_SPPD_SuratTugas_SentraKemensos?usp=sharing",
+        files: [
+          {
+            name: "Surat_Tugas_Pendampingan_PPKS_Sentra_TW2.pdf",
+            size: "1.2 MB",
+            category: "Legalitas Penugasan",
+            link: "https://drive.google.com/file/d/1E6fG_SuratTugas_PPKS_Sentra/view?usp=sharing"
+          },
+          {
+            name: "Laporan_Perjalanan_Dinas_SPPD_Rehsos.pdf",
+            size: "2.8 MB",
+            category: "Laporan Pelaksanaan Tugas",
+            link: "https://drive.google.com/file/d/1F7gH_LPJ_PerjalananDinas/view?usp=sharing"
+          },
+          {
+            name: "Rekap_Agenda_Surat_Masuk_Keluar_Subbag_TU.xlsx",
+            size: "730 KB",
+            category: "Ketatausahaan (Kuantitas)",
+            link: "https://drive.google.com/file/d/1G8hI_BukuAgenda_SuratDinas/view?usp=sharing"
+          }
+        ]
+      }
+    };
+
+    /* ==========================================================
+       STATE MANAGEMENT
+       ========================================================== */
+    let cart = [];
+    let currentPreset = 'pkh';
+    let currentExtractedFiles = [...SIMULATOR_PRESETS.pkh.files];
+    let appliedCoupon = null;
+
+    const formatCurrency = (amount) => {
+      return new Intl.NumberFormat("id-ID", {
+        style: "currency",
+        currency: "IDR",
+        maximumFractionDigits: 0
+      }).format(amount);
+    };
+
+    /* ==========================================================
+       SIMULATOR OPERATIONS
+       ========================================================== */
+    const loadPreset = (presetKey) => {
+      currentPreset = presetKey;
+      const data = SIMULATOR_PRESETS[presetKey];
+      if (!data) return;
+
+      // Update active preset button style
+      document.querySelectorAll(".preset-btn").forEach(btn => {
+        btn.className = "preset-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 transition-all flex items-center gap-1.5";
+      });
+      const activeBtn = document.getElementById(`preset-${presetKey}`);
+      if (activeBtn) {
+        activeBtn.className = "preset-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500 text-slate-950 transition-all flex items-center gap-1.5";
+      }
+
+      document.getElementById("gdriveUrlInput").value = data.folderUrl;
+      currentExtractedFiles = [...data.files];
+      renderExtractedTable();
+    };
+
+    const simulateDriveExtraction = () => {
+      const url = document.getElementById("gdriveUrlInput").value.trim();
+      if (!url) {
+        showToast("Perhatian", "Masukkan tautan Google Drive terlebih dahulu.");
+        return;
+      }
+
+      const scanBox = document.getElementById("scanningProgress");
+      const scanBar = document.getElementById("scanProgressBar");
+      const scanPct = document.getElementById("scanPercent");
+      const scanMsg = document.getElementById("scanStatusMsg");
+
+      scanBox.classList.remove("hidden");
+      scanBar.style.width = "0%";
+      scanPct.textContent = "0%";
+      scanMsg.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Menghubungi Google Drive...';
+
+      let progress = 0;
+      const interval = setInterval(() => {
+        progress += 25;
+        scanBar.style.width = `${progress}%`;
+        scanPct.textContent = `${progress}%`;
+
+        if (progress === 50) {
+          scanMsg.innerHTML = '<i class="fa-solid fa-arrows-rotate fa-spin"></i> Memvalidasi izin shareable link publik...';
+        } else if (progress === 75) {
+          scanMsg.innerHTML = '<i class="fa-solid fa-file-shield"></i> Menyusun struktur format e-Kinerja BKN...';
+        } else if (progress >= 100) {
+          clearInterval(interval);
+          setTimeout(() => {
+            scanBox.classList.add("hidden");
+            renderExtractedTable();
+            showToast("Sukses", `${currentExtractedFiles.length} tautan berkas berhasil diekstrak!`);
+          }, 300);
+        }
+      }, 200);
+    };
+
+    const renderExtractedTable = () => {
+      const container = document.getElementById("outputContentContainer");
+      const format = document.getElementById("outputFormatSelect").value;
+      const statTotal = document.getElementById("statTotalFiles");
+
+      statTotal.textContent = `${currentExtractedFiles.length} Berkas Bukti`;
+
+      if (format === 'table') {
+        container.innerHTML = `
+          <div class="overflow-x-auto rounded-xl border border-slate-800 bg-kemensos-950">
+            <table class="w-full text-left text-xs text-slate-300">
+              <thead class="bg-kemensos-900 text-slate-400 uppercase text-[10px] tracking-wider border-b border-slate-800">
+                <tr>
+                  <th class="py-3 px-4 w-12 text-center">No</th>
+                  <th class="py-3 px-4">Nama Dokumen Bukti Dukung</th>
+                  <th class="py-3 px-4 w-24">Ukuran</th>
+                  <th class="py-3 px-4 w-32">Kategori RHK</th>
+                  <th class="py-3 px-4">Tautan Bersih e-Kinerja (View / Shareable)</th>
+                  <th class="py-3 px-4 text-center w-24">Aksi</th>
+                </tr>
+              </thead>
+              <tbody id="extractedTableBody" class="divide-y divide-slate-800/60 font-normal">
+                ${currentExtractedFiles.map((file, idx) => `
+                  <tr class="hover:bg-kemensos-900/60 transition-colors">
+                    <td class="py-3 px-4 text-center font-bold text-amber-400">${idx + 1}</td>
+                    <td class="py-3 px-4 font-semibold text-white">
+                      <div class="flex items-center gap-2">
+                        <i class="fa-regular ${file.name.endsWith('.pdf') ? 'fa-file-pdf text-rose-400' : file.name.endsWith('.xlsx') ? 'fa-file-excel text-emerald-400' : 'fa-file-image text-cyan-400'} text-sm"></i>
+                        <span class="truncate max-w-xs">${file.name}</span>
+                      </div>
+                    </td>
+                    <td class="py-3 px-4 text-slate-400 font-mono text-[11px]">${file.size}</td>
+                    <td class="py-3 px-4 text-slate-300 text-[11px]">
+                      <span class="px-2 py-0.5 rounded bg-kemensos-900 border border-slate-700 text-amber-300 text-[10px]">
+                        ${file.category}
+                      </span>
+                    </td>
+                    <td class="py-3 px-4 font-mono text-[11px] text-emerald-400">
+                      <a href="${file.link}" target="_blank" class="hover:underline flex items-center gap-1">
+                        <i class="fa-solid fa-link text-[10px]"></i>
+                        <span class="truncate max-w-xs">${file.link}</span>
+                      </a>
+                    </td>
+                    <td class="py-3 px-4 text-center">
+                      <button 
+                        onclick="copySingleLink('${file.link}')" 
+                        class="p-1.5 rounded-lg bg-kemensos-900 hover:bg-amber-500 hover:text-slate-950 text-slate-300 text-[11px] transition-colors"
+                        title="Salin tautan ini"
+                      >
+                        <i class="fa-regular fa-copy"></i>
+                      </button>
+                    </td>
+                  </tr>
+                `).join("")}
+              </tbody>
+            </table>
+          </div>
+        `;
+      } else if (format === 'bullet') {
+        const textLines = currentExtractedFiles.map((f, i) => `[${i + 1}] ${f.name} - ${f.link}`).join('\n\n');
+        container.innerHTML = `
+          <div class="p-4 rounded-xl bg-kemensos-950 border border-slate-800">
+            <label class="block text-[11px] font-bold text-amber-400 mb-2 uppercase tracking-wider">Format Teks e-Kinerja BKN (Tinggal Blok & Tempel):</label>
+            <textarea 
+              id="rawOutputText" 
+              readonly 
+              class="w-full h-56 p-3 rounded-lg bg-kemensos-900 border border-slate-700 text-xs font-mono text-emerald-300 leading-relaxed focus:outline-none"
+            >${textLines}</textarea>
+          </div>
+        `;
+      } else if (format === 'csv') {
+        const csvHeader = "No,Nama Dokumen,Ukuran,Kategori,Tautan Google Drive";
+        const csvRows = currentExtractedFiles.map((f, i) => `${i + 1},"${f.name}","${f.size}","${f.category}","${f.link}"`).join('\n');
+        const csvContent = `${csvHeader}\n${csvRows}`;
+        container.innerHTML = `
+          <div class="p-4 rounded-xl bg-kemensos-950 border border-slate-800">
+            <label class="block text-[11px] font-bold text-emerald-400 mb-2 uppercase tracking-wider">Pratinjau Data CSV Excel:</label>
+            <textarea 
+              id="rawCsvText" 
+              readonly 
+              class="w-full h-56 p-3 rounded-lg bg-kemensos-900 border border-slate-700 text-xs font-mono text-slate-300 leading-relaxed focus:outline-none"
+            >${csvContent}</textarea>
+          </div>
+        `;
+      }
+    };
+
+    const applyOutputFormat = () => {
+      renderExtractedTable();
+    };
+
+    const copyExtractedLinks = () => {
+      const textToCopy = currentExtractedFiles.map((f, i) => `[${i + 1}] ${f.name} - ${f.link}`).join('\n');
+      
+      const tempArea = document.createElement("textarea");
+      tempArea.value = textToCopy;
+      document.body.appendChild(tempArea);
+      tempArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempArea);
+
+      const btnText = document.getElementById("copyBtnText");
+      btnText.textContent = "Tersalin ke Clipboard!";
+      showToast("Tersalin!", "Format e-Kinerja siap di-paste.");
+      setTimeout(() => {
+        btnText.textContent = "Salin Teks untuk e-Kinerja";
+      }, 2000);
+    };
+
+    const copySingleLink = (link) => {
+      const tempArea = document.createElement("textarea");
+      tempArea.value = link;
+      document.body.appendChild(tempArea);
+      tempArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempArea);
+      showToast("Tersalin", "Tautan file siap dipakai.");
+    };
+
+    const downloadExtractedCSV = () => {
+      const csvHeader = "No,Nama Dokumen,Ukuran,Kategori,Tautan Google Drive\n";
+      const csvRows = currentExtractedFiles.map((f, i) => `${i + 1},"${f.name}","${f.size}","${f.category}","${f.link}"`).join('\n');
+      const blob = new Blob([csvHeader + csvRows], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement("a");
+      const url = URL.createObjectURL(blob);
+      link.setAttribute("href", url);
+      link.setAttribute("download", `Ekstraksi_Bukti_GDrive_${currentPreset}_2026.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      showToast("Download Dimulai", "File CSV tersimpan di perangkat Anda.");
+    };
+
+    /* ==========================================================
+       CATALOG & SHOPPING CART
+       ========================================================== */
+    const renderProducts = (searchQuery = "") => {
+      const grid = document.getElementById("productGrid");
+      const query = searchQuery.toLowerCase();
+
+      const filtered = PRODUCTS.filter(p => 
+        p.title.toLowerCase().includes(query) ||
+        p.desc.toLowerCase().includes(query) ||
+        p.role.toLowerCase().includes(query)
+      );
+
+      grid.innerHTML = filtered.map(item => {
+        const inCart = cart.some(c => c.id === item.id);
+
+        return `
+          <div class="rounded-2xl ${item.isHero ? 'bg-gradient-to-b from-kemensos-900 to-kemensos-950 border-2 border-amber-500/70 shadow-2xl shadow-amber-500/10' : 'bg-kemensos-950 border border-slate-800'} p-5 flex flex-col justify-between group hover:border-amber-500/60 transition-all">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded ${item.isHero ? 'bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 font-black' : 'bg-kemensos-900 text-amber-300 border border-slate-700'}">
+                  ${item.badge}
+                </span>
+                <span class="text-[10px] font-semibold text-slate-400">
+                  <i class="fa-solid fa-id-badge text-amber-500/70 mr-1"></i>${item.role}
+                </span>
+              </div>
+
+              <h3 class="text-sm font-bold text-white group-hover:text-amber-400 transition-colors leading-snug">
+                ${item.title}
+              </h3>
+
+              <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+                ${item.desc}
+              </p>
+
+              <ul class="mt-4 space-y-1.5 pt-3 border-t border-slate-800/80 text-[11px] text-slate-300">
+                ${item.features.slice(0, 3).map(f => `
+                  <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-400 text-xs mt-0.5"></i>
+                    <span class="line-clamp-1">${f}</span>
+                  </li>
+                `).join("")}
+              </ul>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between gap-2">
+              <div>
+                <span class="text-[10px] text-slate-500 line-through block leading-none">${formatCurrency(item.originalPrice)}</span>
+                <span class="text-base font-black text-amber-400">${formatCurrency(item.price)}</span>
+              </div>
+              <button 
+                onclick="toggleProductInCart('${item.id}')" 
+                class="px-3 py-2 rounded-xl text-xs font-extrabold transition-all flex items-center gap-1.5 ${
+                  inCart 
+                    ? 'bg-emerald-600/20 text-emerald-400 border border-emerald-500/30' 
+                    : item.isHero 
+                      ? 'bg-amber-500 hover:bg-amber-400 text-slate-950 shadow-md shadow-amber-500/20' 
+                      : 'bg-kemensos-900 hover:bg-slate-800 text-slate-200 border border-slate-700'
+                }"
+              >
+                <i class="fa-solid ${inCart ? 'fa-check' : 'fa-cart-plus'}"></i>
+                <span>${inCart ? 'Dipilih' : 'Pesan'}</span>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join("");
+    };
+
+    const addHeroProductDirectly = () => {
+      const hero = PRODUCTS.find(p => p.id === "prod-ekstraktor-pro");
+      if (!hero) return;
+
+      if (!cart.some(c => c.id === hero.id)) {
+        cart.push(hero);
+        updateCartDrawer();
+        showToast("Ekstraktor GDrive Ditambahkan", "Silakan lengkapi pesanan di keranjang.");
+      }
+      openCart();
+    };
+
+    const toggleProductInCart = (productId) => {
+      const prod = PRODUCTS.find(p => p.id === productId);
+      if (!prod) return;
+
+      const idx = cart.findIndex(c => c.id === productId);
+      if (idx > -1) {
+        cart.splice(idx, 1);
+        showToast("Dihapus", `${prod.title} dikeluarkan dari keranjang.`);
+      } else {
+        cart.push(prod);
+        showToast("Ditambahkan", `${prod.title} berhasil dimasukkan.`);
+      }
+
+      updateCartDrawer();
+      renderProducts(document.getElementById("catalogSearch").value);
+    };
+
+    const updateCartDrawer = () => {
+      const badgeNav = document.getElementById("cartBadgeCount");
+      const badgeDrawer = document.getElementById("drawerCartBadge");
+      const container = document.getElementById("cartItemsList");
+      const subtotalEl = document.getElementById("subtotalDisplay");
+      const totalEl = document.getElementById("totalDisplay");
+      const discountRow = document.getElementById("discountContainer");
+      const discountEl = document.getElementById("discountDisplay");
+      const btnWA = document.getElementById("btnSubmitWhatsApp");
+
+      badgeNav.textContent = cart.length;
+      badgeDrawer.textContent = cart.length;
+
+      const subtotal = cart.reduce((sum, item) => sum + item.price, 0);
+      subtotalEl.textContent = formatCurrency(subtotal);
+
+      let discountAmount = 0;
+      if (appliedCoupon) {
+        discountAmount = Math.round((subtotal * appliedCoupon.discountPct) / 100);
+        discountRow.classList.remove("hidden");
+        discountEl.textContent = `- ${formatCurrency(discountAmount)}`;
+      } else {
+        discountRow.classList.add("hidden");
+      }
+
+      const total = Math.max(0, subtotal - discountAmount);
+      totalEl.textContent = formatCurrency(total);
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-12 text-slate-400">
+            <div class="w-12 h-12 rounded-full bg-kemensos-900 flex items-center justify-center text-slate-500 mx-auto mb-2">
+              <i class="fa-solid fa-cart-arrow-down text-lg"></i>
+            </div>
+            <p class="text-xs font-bold text-slate-300">Keranjang masih kosong</p>
+            <p class="text-[11px] text-slate-500 mt-1">Pilih Ekstraktor GDrive SKP atau template jabatan Anda di katalog.</p>
+          </div>
+        `;
+        btnWA.disabled = true;
+        return;
+      }
+
+      btnWA.disabled = false;
+
+      container.innerHTML = cart.map(item => `
+        <div class="p-3 rounded-xl bg-kemensos-900 border border-slate-800 flex items-center justify-between gap-3">
+          <div class="min-w-0 flex-1">
+            <h5 class="text-xs font-bold text-white truncate">${item.title}</h5>
+            <span class="text-[10px] text-amber-400 block">${item.role}</span>
+            <span class="text-xs font-extrabold text-slate-200 mt-0.5 block">${formatCurrency(item.price)}</span>
+          </div>
+          <button 
+            onclick="toggleProductInCart('${item.id}')" 
+            class="p-1.5 text-slate-400 hover:text-rose-400 text-xs rounded transition-colors"
+            title="Hapus produk"
+          >
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+        </div>
+      `).join("");
+    };
+
+    const applyDiscountCoupon = () => {
+      const code = document.getElementById("couponInput").value.trim().toUpperCase();
+      const notice = document.getElementById("couponNotice");
+
+      if (code === "ASN2026" || code === "KEMENSOS2026") {
+        appliedCoupon = { code: code, discountPct: 15 };
+        notice.classList.remove("hidden");
+        notice.textContent = "Kupon Berhasil! Potongan 15% diterapkan khusus ASN/PPPK.";
+        notice.className = "text-[10px] font-semibold text-emerald-400";
+      } else {
+        appliedCoupon = null;
+        notice.classList.remove("hidden");
+        notice.textContent = "Kupon tidak ditemukan. Coba gunakan: ASN2026";
+        notice.className = "text-[10px] font-semibold text-rose-400";
+      }
+
+      updateCartDrawer();
+    };
+
+    const sendWhatsAppOrder = () => {
+      if (cart.length === 0) return;
+
+      const name = document.getElementById("orderBuyerName").value.trim();
+      const nip = document.getElementById("orderBuyerNIP").value.trim() || "-";
+      const satker = document.getElementById("orderBuyerSatker").value.trim() || "-";
+      const phone = document.getElementById("orderBuyerPhone").value.trim();
+
+      if (!name) {
+        showToast("Perhatian", "Mohon isi Nama Lengkap & Gelar Anda.");
+        document.getElementById("orderBuyerName").focus();
+        return;
+      }
+
+      const subtotal = cart.reduce((sum, item) => sum + item.price, 0);
+      const discount = appliedCoupon ? Math.round((subtotal * appliedCoupon.discountPct) / 100) : 0;
+      const finalTotal = subtotal - discount;
+
+      let msg = `*ORDER LISENSI APLIKASI SKP KEMENSOS*%0A`;
+      msg += `==================================%0A`;
+      msg += `*Nama Lengkap:* ${encodeURIComponent(name)}%0A`;
+      msg += `*NIP / NI PPPK:* ${encodeURIComponent(nip)}%0A`;
+      msg += `*Unit Kerja / Satker:* ${encodeURIComponent(satker)}%0A`;
+      if (phone) msg += `*No. WhatsApp:* ${encodeURIComponent(phone)}%0A`;
+      msg += `----------------------------------%0A`;
+      msg += `*Produk yang Dipesan:*%0A`;
+
+      cart.forEach((item, idx) => {
+        msg += `${idx + 1}. ${encodeURIComponent(item.title)} (${formatCurrency(item.price)})%0A`;
+      });
+
+      if (discount > 0) {
+        msg += `----------------------------------%0A`;
+        msg += `*Subtotal:* ${formatCurrency(subtotal)}%0A`;
+        msg += `*Diskon Voucher (${appliedCoupon.code}):* -${formatCurrency(discount)}%0A`;
+      }
+
+      msg += `----------------------------------%0A`;
+      msg += `*TOTAL PEMBAYARAN:* *${formatCurrency(finalTotal)}*%0A`;
+      msg += `==================================%0A`;
+      msg += `Mohon petunjuk instruksi nomor rekening pembayaran dan pengiriman file aplikasi/lisensi Google Drive. Terima kasih!`;
+
+      const targetWaNumber = "6281234567890"; // Ganti dengan nomor WhatsApp penerima
+      window.open(`https://wa.me/${targetWaNumber}?text=${msg}`, "_blank");
+    };
+
+    /* ==========================================================
+       TOAST NOTIFICATION & DRAWER TOGGLES
+       ========================================================== */
+    const showToast = (head, desc) => {
+      const box = document.getElementById("toastBox");
+      document.getElementById("toastHead").textContent = head;
+      document.getElementById("toastMessage").textContent = desc;
+      box.classList.remove("hidden");
+      setTimeout(() => {
+        box.classList.add("hidden");
+      }, 2500);
+    };
+
+    const cartDrawer = document.getElementById("cartDrawer");
+    const openCart = () => {
+      cartDrawer.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    };
+    const closeCart = () => {
+      cartDrawer.classList.add("hidden");
+      document.body.style.overflow = "auto";
+    };
+
+    /* ==========================================================
+       DOM READY INITIALIZATIONS
+       ========================================================== */
+    window.addEventListener("DOMContentLoaded", () => {
+      renderProducts();
+      loadPreset('pkh');
+      updateCartDrawer();
+
+      // Cart open/close triggers
+      document.getElementById("openCartBtn").addEventListener("click", openCart);
+      document.getElementById("closeCartBtn").addEventListener("click", closeCart);
+      document.getElementById("cartOverlay").addEventListener("click", closeCart);
+
+      // Search Catalog input
+      document.getElementById("catalogSearch").addEventListener("input", (e) => {
+        renderProducts(e.target.value);
+      });
+
+      // FAQ accordion toggle
+      document.querySelectorAll(".faq-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const content = btn.nextElementSibling;
+          const icon = btn.querySelector("i");
+          content.classList.toggle("hidden");
+          icon.classList.toggle("rotate-180");
+        });
+      });
+    });
+  </script>
+</body>
+</html>
